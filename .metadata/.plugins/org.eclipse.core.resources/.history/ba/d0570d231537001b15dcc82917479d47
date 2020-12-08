@@ -1,0 +1,17 @@
+package com.tiendavirtual.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.tiendavirtual.model.Linea;
+import com.tiendavirtual.repo.IGenericRepo;
+import com.tiendavirtual.service.ILineaService;
+@Service
+public class LineaServiceImpl extends CRUDImpl<Linea, Integer> implements ILineaService{
+
+	@Override
+	protected IGenericRepo<Linea, Integer> getRepo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

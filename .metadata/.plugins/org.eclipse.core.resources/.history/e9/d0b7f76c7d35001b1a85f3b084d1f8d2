@@ -1,0 +1,9 @@
+package com.tiendavirtual.controller;
+
+import com.tiendavirtual.service.IClienteService;
+
+public class ClienteController {
+	
+	private IClienteService service;
+
+}

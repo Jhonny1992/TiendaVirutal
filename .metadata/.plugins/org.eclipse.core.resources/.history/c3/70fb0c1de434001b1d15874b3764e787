@@ -1,0 +1,64 @@
+package com.tiendavirtual.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="precioproducto")
+public class PrecioProducto {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="idPrecio")
+	private Integer idPrecio;
+	
+	@Column(name="valorVentaPrecio")
+	private Double valorVentaPrecio;
+	
+	@Column(name="impuestoPrecio")
+	private Double impuestoPrecio;
+	
+	@Column(name="Precio")
+	private Double Precio;
+
+	public Integer getIdPrecio() {
+		return idPrecio;
+	}
+
+	public void setIdPrecio(Integer idPrecio) {
+		this.idPrecio = idPrecio;
+	}
+
+	public Double getValorVentaPrecio() {
+		return valorVentaPrecio;
+	}
+
+	public void setValorVentaPrecio(Double valorVentaPrecio) {
+		this.valorVentaPrecio = valorVentaPrecio;
+	}
+
+	public Double getImpuestoPrecio() {
+		return impuestoPrecio;
+	}
+
+	public void setImpuestoPrecio(Double impuestoPrecio) {
+		this.impuestoPrecio = impuestoPrecio;
+	}
+
+	public Double getPrecio() {
+		return Precio;
+	}
+
+	public void setPrecio(Double precio) {
+		Precio = precio;
+	}
+	
+	
+	
+
+}

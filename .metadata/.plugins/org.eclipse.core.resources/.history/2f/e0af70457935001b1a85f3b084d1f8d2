@@ -1,0 +1,10 @@
+package com.tiendavirtual.service.impl;
+
+import com.tiendavirtual.repo.IGenericRepo;
+import com.tiendavirtual.service.ICRUD;
+
+public abstract class CRUDImpl <T, ID> implements ICRUD<T, ID>{
+	
+	protected abstract IGenericRepo<T, ID> getRepo();
+
+}

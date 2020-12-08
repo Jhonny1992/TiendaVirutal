@@ -1,0 +1,13 @@
+package com.tiendavirtual.service;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
+
+import com.tiendavirtual.model.Familia;
+
+public interface IFamiliaService extends ICRUD<Familia, Integer>{
+	
+	List<Familia> listar(Integer idCategoria);
+
+}

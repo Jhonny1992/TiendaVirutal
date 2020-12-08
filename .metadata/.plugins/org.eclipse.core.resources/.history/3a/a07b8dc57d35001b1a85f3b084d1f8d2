@@ -1,0 +1,22 @@
+package com.tiendavirtual.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import com.tiendavirtual.model.Cliente;
+import com.tiendavirtual.service.IClienteService;
+
+public class ClienteController {
+	
+	@Autowired
+	private IClienteService service;
+	
+	public ResponseEntity<Cliente> listar() throws Exception{
+		List<Cliente> lista=service.listar();
+		return new ResponseEntity<List<Cliente>>(lista, HttpStatus.OK);
+	}
+
+}

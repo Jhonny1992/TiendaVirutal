@@ -1,0 +1,8 @@
+package com.tiendavirtual.service.impl;
+
+import com.tiendavirtual.model.Categoria;
+import com.tiendavirtual.service.ICategoriaService;
+
+public class CategoriaServiceImpl extends CRUDImpl<Categoria, Integer> implements ICategoriaService{
+
+}

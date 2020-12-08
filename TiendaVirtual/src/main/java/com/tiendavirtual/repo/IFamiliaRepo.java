@@ -1,0 +1,15 @@
+package com.tiendavirtual.repo;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import com.tiendavirtual.model.Familia;
+
+public interface IFamiliaRepo extends IGenericRepo<Familia, Integer> {
+	
+	@Query("FROM Familia c where c.categoria.idCategoria= :idCategoria")
+	List<Familia> listaFamiliaPorCategoria(@Param("idCategoria") Integer idCategoria);
+
+}

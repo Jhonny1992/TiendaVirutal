@@ -1,0 +1,21 @@
+package com.tiendavirtual.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tiendavirtual.model.Producto;
+import com.tiendavirtual.repo.IGenericRepo;
+import com.tiendavirtual.repo.IProductoRepo;
+import com.tiendavirtual.service.IProductoService;
+
+@Service
+public class ProductoServiceImpl extends CRUDImpl<Producto, Integer> implements IProductoService {
+
+	@Autowired
+	private IProductoRepo repo;
+	
+	@Override
+	protected IGenericRepo<Producto, Integer> getRepo() {
+		return repo;
+	}
+}

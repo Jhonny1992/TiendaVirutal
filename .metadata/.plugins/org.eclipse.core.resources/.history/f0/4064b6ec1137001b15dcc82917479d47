@@ -1,0 +1,11 @@
+package com.tiendavirtual.repo;
+
+import org.springframework.data.jpa.repository.Query;
+
+import com.tiendavirtual.model.Categoria;
+
+public interface ICategoriaRepo extends IGenericRepo<Categoria, Integer>{
+	
+	@Query("FROM Categoria c where c.linea.idLinea= :idLinea")
+
+}

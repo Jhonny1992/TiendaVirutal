@@ -1,0 +1,7 @@
+package com.tiendavirtual.repo;
+
+import com.tiendavirtual.model.Clase;
+
+public interface IClaseRepo extends IGenericRepo<Clase, Integer> {
+
+}

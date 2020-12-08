@@ -1,0 +1,10 @@
+package com.tiendavirtual.service;
+
+import com.tiendavirtual.model.Cliente;
+import com.tiendavirtual.model.Producto;
+
+public interface IClienteService extends ICRUD<Cliente, Integer> {
+	
+	Producto Find(Integer id);
+
+}

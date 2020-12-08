@@ -1,0 +1,5 @@
+package com.tiendavirtual.service;
+
+public interface IClaseService {
+
+}

@@ -1,0 +1,8 @@
+package com.tiendavirtual.service.impl;
+
+import com.tiendavirtual.model.Linea;
+import com.tiendavirtual.service.ILineaService;
+
+public class LineaServiceImpl extends CRUDImpl<Linea, Integer> implements ILineaService{
+
+}

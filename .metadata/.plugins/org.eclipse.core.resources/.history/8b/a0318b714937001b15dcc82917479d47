@@ -1,0 +1,15 @@
+package com.tiendavirtual.service.impl;
+
+import com.tiendavirtual.model.Familia;
+import com.tiendavirtual.repo.IGenericRepo;
+import com.tiendavirtual.service.IFamiliaService;
+
+public class FamiliaServiceImpl extends CRUDImpl<Familia, Integer> implements IFamiliaService{
+
+	@Override
+	protected IGenericRepo<Familia, Integer> getRepo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

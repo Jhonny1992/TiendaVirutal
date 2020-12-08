@@ -1,0 +1,6 @@
+package com.tiendavirtual.controller;
+
+Rest
+public class CategoriaController {
+
+}

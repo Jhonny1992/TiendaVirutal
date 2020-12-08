@@ -1,0 +1,16 @@
+package com.tiendavirtual.service.impl;
+
+import com.tiendavirtual.model.Cliente;
+import com.tiendavirtual.repo.IClienteRepo;
+import com.tiendavirtual.repo.IGenericRepo;
+import com.tiendavirtual.service.IClienteService;
+
+public class ClienteServiceImpl extends CRUDImpl<Cliente, Integer> implements IClienteService{
+
+	private IClienteRepo repo;
+	
+	@Override
+	protected IGenericRepo<Cliente, Integer> getRepo() {
+		return repo;
+	}
+}

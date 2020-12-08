@@ -1,0 +1,29 @@
+package com.tiendavirtual.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.tiendavirtual.model.Categoria;
+import com.tiendavirtual.repo.ICategoriaRepo;
+import com.tiendavirtual.repo.IGenericRepo;
+import com.tiendavirtual.service.ICategoriaService;
+
+@Service
+public class CategoriaServiceImpl extends CRUDImpl<Categoria, Integer> implements ICategoriaService{
+
+	private ICategoriaRepo repo;
+	
+	@Override
+	public List<Categoria> listar(Integer idLinea) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected IGenericRepo<Categoria, Integer> getRepo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

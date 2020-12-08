@@ -1,0 +1,9 @@
+package com.tiendavirtual.service;
+
+
+
+import com.tiendavirtual.model.Producto;
+
+public interface IProductoService extends ICRUD<Producto, Integer> {
+
+}

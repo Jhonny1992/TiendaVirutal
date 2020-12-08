@@ -1,0 +1,5 @@
+package com.tiendavirtual.repo;
+
+public interface IClaseRepo {
+
+}

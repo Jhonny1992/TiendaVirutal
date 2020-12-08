@@ -1,0 +1,7 @@
+package com.tiendavirtual.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IGenericRepo <T,TD> extends JpaRepository<T, ID> {
+
+}

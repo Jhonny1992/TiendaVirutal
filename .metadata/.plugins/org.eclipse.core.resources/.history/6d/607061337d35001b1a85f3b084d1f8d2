@@ -1,0 +1,8 @@
+package com.tiendavirtual.service.impl;
+
+import com.tiendavirtual.model.Cliente;
+import com.tiendavirtual.service.IClienteService;
+
+public class ClienteServiceImpl extends CRUDImpl<Cliente, Integer> implements IClienteService{
+
+}
